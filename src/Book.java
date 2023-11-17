@@ -8,14 +8,25 @@ public class Book {
     private Author author;
     private int pageNumbers;
     // private Topic topic;
+    private  Topic topic;
     private Date releaseDate;
 
-    public Book(int bookID, String bookName, Author author, int pageNumbers, Date releaseDate) {
+
+    public Book(int bookID, String bookName, Author author, int pageNumbers, Date releaseDate, Topic topic) {
         this.bookID = bookID;
         this.bookName = bookName;
         this.author = author;
         this.pageNumbers = pageNumbers;
         this.releaseDate = releaseDate;
+        this.topic = topic;
+    }
+
+    public Topic getTopic() {
+        return topic;
+    }
+
+    public void setTopic(Topic topic) {
+        this.topic = topic;
     }
 
     public int getBookID() {
