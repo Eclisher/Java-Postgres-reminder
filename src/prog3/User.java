@@ -1,4 +1,4 @@
-package src;
+package src.prog3;
 
 public abstract class User {
     private int id;
@@ -45,7 +45,14 @@ public abstract class User {
         PhoneNumber = phoneNumber;
     }
 
-    public void viewAvailableBooks() {
-
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", name='" +Name + '\'' +
+                ", email='" + Email + '\'' +
+                ", phoneNumber='" + PhoneNumber + '\'' +
+                '}';
     }
+
 }

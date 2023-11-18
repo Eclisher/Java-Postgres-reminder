@@ -1,12 +1,12 @@
-package src;
+package src.prog3;
 
 public class Author {
     private int authorID;
     private String authorName;
-    private String   sex;
+    private char sex;
 
-    public Author(int authorID, String authorName, String sex) {
-        this.authorID = authorID;
+    public Author(int authorId, String authorName, char sex) {
+        this.authorID = authorId;
         this.authorName = authorName;
         this.sex = sex;
     }
@@ -27,12 +27,21 @@ public class Author {
         this.authorName = authorName;
     }
 
-    public String getSex() {
+    public char getSex() {
         return sex;
     }
 
-    public void setSex(String sex) {
+    public void setSex(char sex) {
         this.sex = sex;
     }
 
+    @Override
+    public String toString() {
+        return "Author{" +
+                "authorId=" + authorID +
+                ", authorName='" + authorName + '\'' +
+                ", sex=" + sex +
+                '}';
+    }
 }
+

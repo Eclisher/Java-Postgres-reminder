@@ -1,5 +1,6 @@
-package src;
+package src.prog3;
 
+import java.sql.Connection;
 import java.util.List;
 
 public interface CrudOperation  <T>{
@@ -8,3 +9,5 @@ public interface CrudOperation  <T>{
     T save(T toSave);
     T delete(T toDelete);
 }
+
+
