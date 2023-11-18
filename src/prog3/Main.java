@@ -77,6 +77,5 @@ public class Main {
 //        Admin deletedAdmin = adminCrudOperation.delete(adminDelete);
 //        logger.info("Deleted Admin: " + deletedAdmin);
 
-
     }
 }
