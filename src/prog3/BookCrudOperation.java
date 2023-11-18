@@ -44,13 +44,13 @@ public class BookCrudOperation implements CrudOperation <Book>{
     public Book save(Book toSave) {
         try {
             Connection connection = getConnection();
-            String query = "INSERT INTO book (book_name, author_id, page_numbers, topic, release_date) VALUES (?, ?, ?, ?, ?)";
+            String query = "INSERT INTO book (book_name, author_id, page_numbers, topic, release_date) VALUES (?, ?, ?, CAST(? AS topic), ?)";
             PreparedStatement statement = connection.prepareStatement(query, PreparedStatement.RETURN_GENERATED_KEYS);
 
             statement.setString(1, toSave.getBookName());
             statement.setInt(2, toSave.getAuthor());
             statement.setInt(3, toSave.getPageNumbers());
-            statement.setObject(4, toSave.getTopic());
+            statement.setString(4, toSave.getTopic().name());
             statement.setDate(5, java.sql.Date.valueOf(toSave.getReleaseDate()));
             statement.executeUpdate();
 
@@ -65,6 +65,7 @@ public class BookCrudOperation implements CrudOperation <Book>{
         }
         return toSave;
     }
+
 
     @Override
     public Book delete(Book toDelete) {

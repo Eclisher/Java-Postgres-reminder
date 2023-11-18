@@ -42,14 +42,15 @@ CREATE TABLE IF NOT EXISTS admin (
                                      admin_id SERIAL PRIMARY KEY,
                                      admin_name VARCHAR(255) NOT NULL,
                                      admin_email VARCHAR(255) NOT NULL,
+                                     admin_phoneNumber VARCHAR(255) not null ,
                                      admin_password VARCHAR(255) NOT NULL
 );
 
 -- add three sample rows
-INSERT INTO admin (admin_name, admin_email, admin_password) VALUES
-                                      ('Admin1', 'admin1@example.com', 'adminpassword1'),
-                                      ('Admin2', 'admin2@example.com', 'adminpassword2'),
-                                      ('Admin3', 'admin3@example.com', 'adminpassword3');
+INSERT INTO admin (admin_name, admin_email, admin_phoneNumber, admin_password) VALUES
+                                      ('Clark', 'admin1@example.com', '321681981' ,'adminpassword1'),
+                                      ('Miren', 'admin2@example.com', '985461981','adminpassword2'),
+                                      ('Claude', 'admin3@example.com','15984586198' , 'adminpassword3');
 
 -- create_table_subscribers.sql
 CREATE TABLE IF NOT EXISTS subscribers (

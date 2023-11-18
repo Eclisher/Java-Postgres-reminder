@@ -1,9 +1,9 @@
 package src.prog3;
 public class Admin  extends User {
     private String password;
-    public Admin(int id, String Name, String Email, String PhoneNumber) {
+    public Admin(int id, String Name, String Email, String PhoneNumber, String password) {
         super(id, Name, Email, PhoneNumber);
-        this.password =password;
+        this.password = password;
     }
 
     public String getPassword() {
