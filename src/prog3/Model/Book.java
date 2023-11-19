@@ -1,4 +1,4 @@
-package src.prog3;
+package src.prog3.Model;
 
 import java.time.LocalDate;
 

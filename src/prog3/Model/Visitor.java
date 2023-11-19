@@ -1,5 +1,4 @@
-package src.prog3;
-
+package src.prog3.Model;
 public class Visitor  extends User{
     private String reference;
 

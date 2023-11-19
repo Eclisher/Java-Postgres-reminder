@@ -1,4 +1,4 @@
-package src.prog3;
+package src.prog3.Interface;
 
 import java.sql.Connection;
 import java.util.List;

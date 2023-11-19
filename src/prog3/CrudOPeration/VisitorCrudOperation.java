@@ -1,4 +1,8 @@
-    package src.prog3;
+    package src.prog3.CrudOPeration;
+
+    import src.prog3.DBConnection;
+    import src.prog3.Interface.CrudOperation;
+    import src.prog3.Model.Visitor;
 
     import java.sql.Connection;
     import java.sql.PreparedStatement;
@@ -8,7 +12,7 @@
     import java.util.List;
 
 
-    public class VisitorCrudOperation  implements CrudOperation <Visitor>{
+    public class VisitorCrudOperation  implements CrudOperation<Visitor> {
         private static Connection connection;
 
         // Méthode pour obtenir une connexion à la base de données

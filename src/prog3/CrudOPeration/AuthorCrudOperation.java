@@ -1,4 +1,8 @@
-package src.prog3;
+package src.prog3.CrudOPeration;
+
+import src.prog3.DBConnection;
+import src.prog3.Interface.CrudOperation;
+import src.prog3.Model.Author;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -7,7 +11,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AuthorCrudOperation implements  CrudOperation <Author>{
+public class AuthorCrudOperation implements CrudOperation<Author> {
     private static Connection connection;
 
     // Méthode pour obtenir une connexion à la base de données

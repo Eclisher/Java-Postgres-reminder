@@ -2,7 +2,11 @@ package src.prog3;
 import java.util.List;
 import java.util.logging.Logger;
 
-import src.prog3.*;
+import src.prog3.CrudOPeration.AdminCrudOperation;
+import src.prog3.CrudOPeration.AuthorCrudOperation;
+import src.prog3.CrudOPeration.BookCrudOperation;
+import src.prog3.CrudOPeration.VisitorCrudOperation;
+import src.prog3.Model.*;
 
 public class Main {
     private static final Logger logger = Logger.getLogger(Main.class.getName());

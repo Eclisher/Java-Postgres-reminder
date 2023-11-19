@@ -1,5 +1,9 @@
-package src.prog3;
+package src.prog3.CrudOPeration;
 
+
+import src.prog3.DBConnection;
+import src.prog3.Interface.CrudOperation;
+import src.prog3.Model.Admin;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -9,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class AdminCrudOperation  implements CrudOperation <Admin>{
+public class AdminCrudOperation  implements CrudOperation<Admin> {
     private static Connection connection;
     // Méthode pour obtenir une connexion à la base de données
     private static Connection getConnection() {

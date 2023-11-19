@@ -1,4 +1,6 @@
-package src.prog3;
+package src.prog3.Model;
+
+
 public class Admin  extends User {
     private String password;
     public Admin(int id, String Name, String Email, String PhoneNumber, String password) {

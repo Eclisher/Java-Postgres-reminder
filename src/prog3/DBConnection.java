@@ -14,6 +14,7 @@ public class DBConnection {
                 String username = System.getenv("DB_USER");
                 String password = System.getenv("DB_PASSWORD");
                 connection = DriverManager.getConnection(url, username, password);
+                System.out.println("connection");
             } catch (SQLException e) {
                 e.printStackTrace();
             }
